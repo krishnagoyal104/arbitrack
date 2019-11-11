@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 :root {
-	--custom-font: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	--custom-font:'Ubuntu', sans-serif;
 
 	--custom-color: #1158D1;
 };

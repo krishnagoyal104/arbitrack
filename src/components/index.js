@@ -28,7 +28,7 @@ class AssetList extends React.Component{
     this.toggleLoader();
     try{
       let high = {};
-      const {data} = await axios('/data');
+      const {data} = await axios('https://arbitrack.com/data');
       const assets = JSON.parse(data[0]);
       if(data[1]){
         high = JSON.parse(data[1]);
@@ -295,22 +295,25 @@ class AssetList extends React.Component{
 
     return (
       <div id="assetListContainer">
-        <div id="row">
+        <div id="row" className="sticky-top">
           <Container>
             <Navbar id="navbar" className="navbar-dark" expand="lg">
-              <Navbar.Brand href="#home">Arbitrack</Navbar.Brand>
+              <Navbar.Brand href="#home" id="logo_container">
+                <img id="logo" src={require('../logo/graph.png')} alt="" />
+                <span id="name">Arbitrack</span>
+              </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="navbar_container">
                 <Nav id="navbar_items">
-                  <Nav.Link href="#"><span onClick={this.changeModalState}>about</span></Nav.Link>
-                  <Nav.Link href="#link"><span>home</span></Nav.Link>
-                  <Nav.Link href="#home"><span>Dapper</span></Nav.Link>
+                  <Nav.Link href="#"><span onClick={this.changeModalState}>info</span></Nav.Link>
+                  <Nav.Link href="#main"><span>home</span></Nav.Link>
+                  <Nav.Link href="https://dapper.network" target="_blank"><span>Dapper</span></Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
           </Container>
         </div>  
-        <div id="container_top">
+        <div id="main" className="container_top">
           <span id="header">Arbitrage Bot</span>
           <p id="description">Arbitrage opportunities in 10+ exchanges.</p>
           {this.state.high.symbol && this.renderContainer()}
