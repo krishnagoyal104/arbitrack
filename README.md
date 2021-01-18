@@ -1,6 +1,8 @@
 # Arbitrack: Arbitrage tracker
 https://arbitrack.finstack.co.in
 
+This repo contains the frontend code for Arbitrack.
+
 ## Available Scripts
 ```
 #install dependencies
