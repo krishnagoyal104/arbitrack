@@ -307,7 +307,7 @@ class AssetList extends React.Component{
                 <Nav id="navbar_items">
                   <Nav.Link href="#main"><span>Home</span></Nav.Link>
                   <Nav.Link href="#"><span onClick={this.changeModalState}>Info</span></Nav.Link>
-                  <Nav.Link href="https://finstack.info" target="_blank"><span>Finstack</span></Nav.Link>
+                  <Nav.Link href="https://finstack.co.in" target="_blank"><span>Finstack</span></Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
