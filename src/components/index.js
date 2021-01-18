@@ -305,9 +305,9 @@ class AssetList extends React.Component{
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="navbar_container">
                 <Nav id="navbar_items">
-                  <Nav.Link href="#"><span onClick={this.changeModalState}>info</span></Nav.Link>
-                  <Nav.Link href="#main"><span>home</span></Nav.Link>
-                  <Nav.Link href="https://dapper.network" target="_blank"><span>Dapper</span></Nav.Link>
+                  <Nav.Link href="#main"><span>Home</span></Nav.Link>
+                  <Nav.Link href="#"><span onClick={this.changeModalState}>Info</span></Nav.Link>
+                  <Nav.Link href="https://finstack.info" target="_blank"><span>Finstack</span></Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
